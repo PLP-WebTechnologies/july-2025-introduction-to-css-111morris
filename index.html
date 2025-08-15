@@ -1,0 +1,168 @@
+
+<!-- 
+To instructor: 
+This HTML file is from a previous assignment, which I have now enhanced using CSS. 
+Below is the directory tree showcasing the organization of my files and folders
+
+july-2025-introduction-to-css-111morris/
+├── assets
+│   ├── image
+│   │   ├── image.jpg
+│   │   └── preview.png
+│   ├── music
+│   │   └── music.mp3
+│   └── styles
+│       └── styles.css
+├── index.html
+└── README.md
+I stuck with the structure since you emphasized the importance of being organized and clear
+ -->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML5 Showcase: Vibrant CSS & Box Model</title>
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>HTML5 Showcase: Lists, Media, Tables, and Forms</h1>
+    <p>Explore structured content styled with CSS and the Box Model.</p>
+  </header>
+
+  <main>
+    <!-- Section: Lists -->
+    <section class="content-section">
+      <h2>My Daily Routine</h2>
+
+      <article class="task-list">
+        <h3>Morning Tasks (Ordered List)</h3>
+        <ol>
+          <li>Wake up</li>
+          <li>Brush teeth</li>
+          <li>Exercise</li>
+          <li>Shower</li>
+          <li>Eat breakfast</li>
+        </ol>
+      </article>
+
+      <article class="task-list">
+        <h3>Evening Activities (Unordered List)</h3>
+        <ul>
+          <li>Read a book</li>
+          <li>Watch a movie</li>
+          <li>Write code</li>
+          <li>Go to bed</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Media Section -->
+    <section class="content-section media-section">
+      <h2>Favorite Music & Image</h2>
+
+      <article>
+        <h3>A Relaxing Picture</h3>
+        <img src="assets/image/image.jpg" alt="Scenic placeholder image" />
+      </article>
+
+      <article>
+        <h3>My Favorite Song</h3>
+        <audio controls>
+          <source src="assets/music/music.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </article>
+    </section>
+
+    <!-- Table Section -->
+    <section class="content-section">
+      <h2>Weekly Study Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Topic</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML Basics</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>CSS Styling</td>
+            <td>1.5 hours</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>HTML5 Forms</td>
+            <td>2 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form Section -->
+    <section class="content-section form-section">
+      <h2>Registration Form</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal Info</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="" disabled selected>--Select--</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+
+          <label>
+            <input type="checkbox" id="subscribe" name="subscribe" checked />
+            Subscribe to newsletter
+          </label>
+
+          <p>Choose your interests (just for fun):</p>
+          <label><input type="checkbox" name="interest" value="html" /> HTML</label>
+          <label><input type="checkbox" name="interest" value="css" /> CSS</label>
+          <label><input type="checkbox" name="interest" value="js" /> JavaScript</label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 CSS Box Model Assignment. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
