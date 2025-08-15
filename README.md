@@ -43,3 +43,8 @@ Both files should work together to showcase:
 * Demonstration of the Box Model through visual layout (clear use of margin, padding, and borders)
 * Readability and organization of CSS code (indentation, comments, spacing)
 * Overall appearance and clarity of styled content
+
+
+## Preview of my assignment 
+
+![Preview of my project](assets/image/preview.png)
